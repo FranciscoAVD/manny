@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 export default function Header({ className }: { className?: string }) {
     const [open, setOpen] = useState(false);
   return (
-    <header className="h-20 flex items-center">
+    <header className={cn(`h-20 flex items-center ${className}`)}>
       <div className="flex items-center justify-between mx-auto container">
         <p>Manuel Alejandro</p>
         <nav>
